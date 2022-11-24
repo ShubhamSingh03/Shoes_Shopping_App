@@ -1,0 +1,99 @@
+nav{
+    color: #fff;
+    z-index: 999;
+    position: sticky;
+}
+
+nav a, header a{
+    color: #fff;
+    text-decoration: none;
+}
+
+nav .container{
+    max-width: 1280px;
+    padding: 1em 2em;
+    margin: 0 auto;
+}
+
+nav .container > div{
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    align-items: center;
+}
+
+nav .menu, nav form, .footer, .footer .watch{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .menu{
+    padding-left: 2rem;
+}
+
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    display: inline-block;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: 0 1rem;
+}
+
+nav ul li a:hover{
+    color: rgb(190, 183, 183);
+}
+
+nav ul a{
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+
+nav form{
+    margin-right: 2em;
+}
+
+nav form input{
+    background: transparent;
+    color: #fff;
+    width: 12em;
+    padding: 0.5em 1em;
+    border: none;
+    outline: none;
+}
+
+nav form input::placeholder {
+    color: #fff;
+}
+
+.logo{
+    width: 6em;
+    display: inline-block;
+}
+
+.nav-btn{
+    background: rgba(255, 255, 255, 0.3);
+    font-size: 1.4rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.8em;
+    height: 1.8em;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition:  0.3s;
+}
+
+.nav-btn:hover{
+    background: rgba(255, 255, 255, 0.6);
+}
+
+nav .container .menu-btn{
+    display: none;
+}
+

@@ -1,7 +1,10 @@
 import './App.css';
+import './index.css'
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { GoRocket } from "react-icons/go";
+import Navbar from './components/Navbar/Navbar';
+import HeroBanner from './components/Hero/HeroBanner';
+import Footer from './components/Footer/Footer';
 
 function App() {
   const notify = ()=>{
@@ -19,14 +22,11 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-      <GoRocket className='App-logo' style={{fontSize: "100px"}}/>
-      <button onClick={notify} style={{padding: "10px", backgroundColor: "white"}}>
-        Click Here
-      </button>
-      <ToastContainer>
-      </ToastContainer>
-      </header>
+      <header>
+       <Navbar/>
+       {/* <HeroBanner/>
+       <Footer/> */}
+      </header> 
     </div>
   );
 }
