@@ -1,7 +1,9 @@
+/* navbar css */
 nav{
-    color: #fff;
-    z-index: 999;
     position: sticky;
+    top: 0;
+    color: #fff;
+    z-index: 9999999;
 }
 
 nav a, header a{
@@ -21,7 +23,7 @@ nav .container > div{
     align-items: center;
 }
 
-nav .menu, nav form, .footer, .footer .watch{
+nav .menu, nav form{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -97,3 +99,45 @@ nav .container .menu-btn{
     display: none;
 }
 
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1000px) {
+    nav .container{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+    
+    nav .container > div{
+      grid-template-columns: 1fr;
+    }
+
+    nav .menu{
+      background-color: rgb(156, 156, 156);
+      flex-direction: column;
+      align-items: flex-start;
+      height: 0;
+      overflow: hidden;
+      transition: 0.7s;
+      
+    }
+
+    nav ul li{
+      display: block;
+      margin: 0.5em 0;
+    }
+
+    nav ul li:nth-child(1){
+      margin-top: 1.5em;
+    }
+
+    nav .container .menu-btn{
+      display: inline-block;
+      font-size: 1.8em;
+      cursor: pointer;
+    }
+
+    nav .container .nav-toggle{
+      height: 16em;
+    }
+}

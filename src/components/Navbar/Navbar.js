@@ -1,7 +1,9 @@
 import logo from "../assets/logov1.png";
 import "./Navbar.css";
 import { FaCartPlus, FaBars, FaSearch } from "react-icons/fa";
+import Toggle from "./Toggle"
 
+// Navbar Component
 const Navbar = () => {
   return (
     <>
@@ -15,16 +17,13 @@ const Navbar = () => {
                                 <a href="">New Releases</a>
                             </li>
                             <li>
-                                <a href="">Menu</a>
+                                <a href="">Features</a>
                             </li>
                             <li>
                                 <a href="">Men</a>
                             </li>
                             <li>
                                 <a href="">Women</a>
-                            </li>
-                            <li>
-                                <a href="">Kids</a>
                             </li>
                         </ul>
                         <form>
@@ -42,8 +41,9 @@ const Navbar = () => {
                         </form>
                     </div>
                 </div>
+                {/* toggle btn for smaller screens */}
                 <div className="menu-btn">
-                   <FaBars/>
+                   <FaBars Toggle={Toggle}/>
                 </div>
             </div>
         </nav>
