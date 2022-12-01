@@ -1,8 +1,8 @@
 // Toggle Button functionality
 
 const menu = document.querySelector(".menu");
-const menuBtn = document.querySelector(".menu-btn");
+const menuBtn = document.querySelector(".menuBtn");
 
-menuBtn.addEventListener("click", ()=>{
-    menu.classList.toggle("nav-toggle");
-})
+menuBtn.addEventListener("click", () => {
+  menu.classList.toggle("nav-toggle");
+});

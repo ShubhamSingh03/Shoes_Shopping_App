@@ -1,143 +1,129 @@
 /* navbar css */
-nav{
-    position: sticky;
-    top: 0;
-    color: #fff;
-    z-index: 9999999;
+nav {
+  height: 80px;
+  position: fixed;
+  color: #fff;
+  background-color: transparent;
+  z-index: 9999999;
 }
 
-nav a, header a{
-    color: #fff;
-    text-decoration: none;
+nav.active {
+  backdrop-filter: blur(4px) saturate(72%);
+  -webkit-backdrop-filter: blur(4px) saturate(72%);
+  background-color: rgba(17, 25, 40, 0.12);
 }
 
-nav .container{
-    max-width: 1280px;
-    padding: 1em 2em;
-    margin: 0 auto;
+nav a,
+header a {
+  color: #fff;
+  text-decoration: none;
 }
 
-nav .container > div{
-    display: grid;
-    grid-template-columns: 1fr 6fr;
-    align-items: center;
+nav .container {
+  max-width: 1280px;
+  padding: 1rem 2rem;
+  padding-right: 4rem;
 }
 
-nav .menu, nav form{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+nav .container > div {
+  display: grid;
+  grid-template-columns: 1fr 6fr 1fr;
+  justify-content: center;
 }
 
-nav .menu{
-    padding-left: 2rem;
+nav .menu,
+nav form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-nav ul{
-    list-style-type: none;
-    padding: 0;
-    display: inline-block;
+nav .menu {
+  padding-left: 2rem;
 }
 
-nav ul li{
-    display: inline-block;
-    margin: 0 1rem;
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: inline-block;
 }
 
-nav ul li a:hover{
-    color: rgb(190, 183, 183);
+nav ul li {
+  display: inline-block;
+  margin: 0 1rem;
 }
 
-nav ul a{
-    font-size: 0.8em;
-    text-transform: uppercase;
+nav ul li a:hover {
+  color: rgb(190, 183, 183);
 }
 
-nav form{
-    margin-right: 2em;
+nav ul a {
+  font-size: 0.8rem;
+  text-transform: uppercase;
 }
 
-nav form input{
-    background: transparent;
-    color: #fff;
-    width: 12em;
-    padding: 0.5em 1em;
-    border: none;
-    outline: none;
+nav form {
+  margin-right: 2rem;
+}
+
+nav form input {
+  background: transparent;
+  color: #fff;
+  width: 12rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
 }
 
 nav form input::placeholder {
-    color: #fff;
+  color: #fff;
 }
 
-.logo{
-    width: 6em;
-    display: inline-block;
+.logo {
+  width: 6rem;
+  display: inline-block;
 }
 
-.nav-btn{
-    background: rgba(255, 255, 255, 0.3);
-    font-size: 1.4rem;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 1.8em;
-    height: 1.8em;
-    border-radius: 50%;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    transition:  0.3s;
+/* animation of nav-btn */
+@keyframes swing {
+  0% {
+    transform: rotate(6deg);
+  }
+  100% {
+    transform: rotate(-6deg);
+  }
 }
 
-.nav-btn:hover{
-    background: rgba(255, 255, 255, 0.6);
+.nav-btn {
+  background: rgba(255, 255, 255, 0.3);
+  font-size: 1.4em;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.8em;
+  height: 1.8em;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  animation: swing ease-in-out 1s infinite alternate;
 }
 
-nav .container .menu-btn{
-    display: none;
+.nav-btn:hover {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+nav .container .menu-btn {
+  display: none;
 }
 
 /* MEDIA QUERIES */
 
-@media screen and (max-width: 1000px) {
-    nav .container{
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-    }
-    
-    nav .container > div{
-      grid-template-columns: 1fr;
-    }
-
-    nav .menu{
-      background-color: rgb(156, 156, 156);
-      flex-direction: column;
-      align-items: flex-start;
-      height: 0;
-      overflow: hidden;
-      transition: 0.7s;
-      
-    }
-
-    nav ul li{
-      display: block;
-      margin: 0.5em 0;
-    }
-
-    nav ul li:nth-child(1){
-      margin-top: 1.5em;
-    }
-
-    nav .container .menu-btn{
-      display: inline-block;
-      font-size: 1.8em;
-      cursor: pointer;
-    }
-
-    nav .container .nav-toggle{
-      height: 16em;
-    }
+@media screen and (max-width: 930px) {
+  nav .menu,
+  nav form {
+    display: none;
+  }
 }
