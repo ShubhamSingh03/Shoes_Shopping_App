@@ -2,19 +2,15 @@
 
 ![badge](https://img.shields.io/badge/REACT%20-App-green)
 
-## Project Status
-
-This project `version 1` is currently in development.
-
 ## Description
 
-A [**Shoes Shopping App**](https://shoes-js.netlify.app/) is webapp that has features like view products buying Products, adding products to cart. Learnt to handle APIs and hard-coded JSON object. Built with React, HTML & CSS.
+A [**Shoes Shopping App**](https://shoes-js.netlify.app/) is webapp that has features like view products buying Products, adding products to cart. Done with handling APIs and hard-coded JSON object. Built with React, HTML & CSS.
 
 ## Links for Project
 
 - ### 📌 [LIVE Project Link](https://shoes-js.netlify.app/)
 
-- ### 📌 [YouTube Link]()
+- ### 📌 [YouTube Link](https://youtu.be/dUnItbkVLQs)
 
 ## Tech Stack Used
 
@@ -40,9 +36,11 @@ A [**Shoes Shopping App**](https://shoes-js.netlify.app/) is webapp that has fea
 
 ## Project Screen Shot(s)
 
-![capture1]()
+![capture1](./src/components/assets/fullpage.png)
 
-![capture2]()
+![capture2](./src/components/assets/screenpage2.png)
+
+![mcapture](./src/components/assets/mobileview.png)
 
 ## Checkout Portfolio & Other Projects
 
