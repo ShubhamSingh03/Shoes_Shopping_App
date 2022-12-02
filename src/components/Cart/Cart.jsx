@@ -22,25 +22,25 @@ const Cart = ({ cartItem, buyNow, removeItem }) => {
         <div className="cartBody">
           <div class="cartContainer">
             {/* header section starts here */}
-            <div class="headerSection">
-              <h3 class="heading">Shopping Cart</h3>
+            <div className="headerSection">
+              <h3 className="heading">Shopping Cart</h3>
               <img src={logo} alt="logo-cart" className="header-image" />
             </div>
             {/* header section ends here */}
 
             {/* cart items cards here */}
             {cartItem.map((item) => (
-              <div class="cartItems">
-                <div class="imageBox">
-                  <img src={item.shoeImg} id="cartShoeImg" />
+              <div className="cartItems">
+                <div className="imageBox">
+                  <img src={item.shoeImg} id="cartShoeImg" alt="img" />
                 </div>
-                <div class="about">
+                <div className="about">
                   <h6>Product: </h6>
-                  <h1 class="title">{item.shoeName}</h1>
+                  <h1 className="title">{item.shoeName}</h1>
                   <h6 className="subtitle">{item.shoeCategory}</h6>
                 </div>
-                <div class="price">
-                  <div class="amount"> ₹{item.shoePrice}</div>
+                <div className="price">
+                  <div className="amount"> ₹{item.shoePrice}</div>
                   <button className="remove" onClick={() => removeItem(item)}>
                     Remove Item <MdOutlineRemoveShoppingCart />
                   </button>
@@ -51,10 +51,10 @@ const Cart = ({ cartItem, buyNow, removeItem }) => {
             <hr />
             {cartItem.length >= 1 ? (
               // Checkout section here
-              <div class="checkout">
-                <div class="total">
-                  <h2 class="totalAmount">Total: ₹{amount}</h2>
-                  <button class="button" onClick={buyNow}>
+              <div className="checkout">
+                <div className="total">
+                  <h2 className="totalAmount">Total: ₹{amount}</h2>
+                  <button className="button" onClick={buyNow}>
                     Checkout
                   </button>
                 </div>
@@ -70,7 +70,7 @@ const Cart = ({ cartItem, buyNow, removeItem }) => {
                   onClick={() => {
                     console.log("he");
                     toast("🛒 Cart is Empty BUY NOW !", {
-                      position: "top-right",
+                      position: "bottom-right",
                       autoClose: 1500,
                       hideProgressBar: false,
                       closeOnClick: true,

@@ -1,3 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #090909;
+}
+
+/* scrollbar */
 /* width */
 ::-webkit-scrollbar {
   width: 5px;
@@ -19,22 +32,15 @@
   background: #555;
 }
 
-body{
-  margin: 0;
-  padding: 0;
-  background: #313131;
-  overflow-x: hidden;
-}
-
-header{
+header {
   height: 100vh;
   background: #090909;
   position: relative;
   overflow: hidden;
-  color: #fff;   
+  color: #fff;
 }
 
-header::before{
+header::before {
   content: "";
   position: absolute;
   top: 0;
@@ -46,8 +52,8 @@ header::before{
   z-index: 0;
 }
 
-header::after{
-  content: 'adidas';
+header::after {
+  content: "adidas";
   position: absolute;
   top: 50%;
   left: 50%;
@@ -56,4 +62,20 @@ header::after{
   font-size: 17em;
   font-weight: 700;
   z-index: 0;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1150px) {
+  header::before {
+    display: none;
+  }
+  header {
+    height: initial;
+  }
+}
+
+@media screen and (max-height: 650px) {
+  header {
+    height: initial;
+  }
 }

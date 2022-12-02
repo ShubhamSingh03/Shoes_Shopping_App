@@ -17,7 +17,7 @@ const Product = () => {
       //  checking if product is already in cart
       toast.error("🛒 Product is already in cart !", {
         //toast message error
-        position: "top-right",
+        position: "bottom-right",
         autoClose: 2000,
         hideProgressBar: false,
         closeOnClick: true,
@@ -30,7 +30,7 @@ const Product = () => {
     setCartItem([...cartItem, item]);
     toast.info("🛒 Product added to Cart !", {
       // toast message added to cart
-      position: "top-right",
+      position: "bottom-right",
       autoClose: 2000,
       hideProgressBar: false,
       closeOnClick: true,
@@ -44,7 +44,7 @@ const Product = () => {
   const buyNow = () => {
     setCartItem([]);
     toast.success("🚀 Purchased Complete !", {
-      position: "top-right",
+      position: "bottom-right",
       autoClose: 2000,
       hideProgressBar: false,
       closeOnClick: true,
@@ -58,7 +58,7 @@ const Product = () => {
   const removeItem = (item) => {
     setCartItem(cartItem.filter((singleItem) => singleItem.id !== item.id));
     toast.warn("Product removed from Cart !", {
-      position: "top-right",
+      position: "bottom-right",
       autoClose: 2000,
       hideProgressBar: false,
       closeOnClick: true,

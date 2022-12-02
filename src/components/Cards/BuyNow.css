@@ -32,6 +32,9 @@
     padding: 1rem 0;
     margin-bottom: 0;
   }
+  .featuredShoes .featuredShoesSpan h1 {
+    font-size: 2rem;
+  }
   .featuredShoes .buyNowSection {
     display: grid;
     grid-template-columns: 1fr;

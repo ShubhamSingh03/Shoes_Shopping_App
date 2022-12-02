@@ -28,40 +28,40 @@ const CardItem = ({ ShoeData, addInCart }) => {
               </span>
             </div>
             {/* product prop here */}
-            <div className="productProperties">
+            <div className="productProperties" id="productProperties">
               <span className="productSize">
                 <h4>Size:</h4>
                 <ul className="ulSize">
                   <li>
-                    <a href="">7</a>
+                    <a href="#productProperties">7</a>
                   </li>
                   <li>
-                    <a href="">8</a>
+                    <a href="#productProperties">8</a>
                   </li>
                   <li>
-                    <a href="">9</a>
+                    <a href="#productProperties">9</a>
                   </li>
                   <li>
-                    <a href="" className="active">
+                    <a href="#productProperties" className="active">
                       10
                     </a>
                   </li>
                   <li>
-                    <a href="">11</a>
+                    <a href="#productProperties">11</a>
                   </li>
                 </ul>
               </span>
-              <span className="productColor">
+              <span className="productColor" id="productColor">
                 <h4>Colour:</h4>
                 <ul className="ulColor">
                   <li>
-                    <a href="#" className="orange active"></a>
+                    <a href="#productColor" className="orange active"></a>
                   </li>
                   <li>
-                    <a href="#" className="green"></a>
+                    <a href="#productColor" className="green"></a>
                   </li>
                   <li>
-                    <a href="#" className="yellow"></a>
+                    <a href="#productColor" className="yellow"></a>
                   </li>
                 </ul>
               </span>
