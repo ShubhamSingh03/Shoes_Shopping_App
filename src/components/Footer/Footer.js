@@ -7,13 +7,25 @@ const Footer = () => {
       <div className="footer">
         <div className="social">
           <a href="https://github.com/ShubhamSingh03/Shoes_Shopping_App">
-            <FaGithub />
+            <FaGithub
+              style={{
+                color: "white",
+              }}
+            />
           </a>
           <a href="https://www.linkedin.com/in/shubham-singh-b122b7171/">
-            <FaLinkedin />
+            <FaLinkedin
+              style={{
+                color: "white",
+              }}
+            />
           </a>
           <a href="https://youtu.be/dUnItbkVLQs">
-            <FaYoutube />
+            <FaYoutube
+              style={{
+                color: "white",
+              }}
+            />
           </a>
         </div>
         <h1>
