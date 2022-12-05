@@ -3,6 +3,7 @@ import Cart from "../Cart/Cart";
 import BuyNow from "./BuyNow";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import confetti from "canvas-confetti";
 
 const Product = () => {
   const [cartItem, setCartItem] = useState([]);
@@ -43,6 +44,12 @@ const Product = () => {
   // buy now method {as of now no payment integration so empties cart}
   const buyNow = () => {
     setCartItem([]);
+    // canvas-confetti
+    confetti({
+      particleCount: 350,
+      spread: 80,
+      origin: { y: 0.8 },
+    });
     toast.success("🚀 Purchased Complete !", {
       position: "bottom-right",
       autoClose: 2000,

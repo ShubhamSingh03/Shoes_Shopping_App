@@ -20,7 +20,7 @@ const Cart = ({ cartItem, buyNow, removeItem }) => {
           <h1>Shopping Cart</h1>
         </span>
         <div className="cartBody">
-          <div class="cartContainer">
+          <div className="cartContainer">
             {/* header section starts here */}
             <div className="headerSection">
               <h3 className="heading">Shopping Cart</h3>
@@ -68,7 +68,6 @@ const Cart = ({ cartItem, buyNow, removeItem }) => {
                 <button
                   className="buyBtn"
                   onClick={() => {
-                    console.log("he");
                     toast("🛒 Cart is Empty BUY NOW !", {
                       position: "bottom-right",
                       autoClose: 1500,
